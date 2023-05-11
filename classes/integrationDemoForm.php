@@ -40,7 +40,7 @@ class IntegrationDemoForm
             'domain' => 'trendagent',
             'client_id' => $this->client_id, // id приложения
             'client_secret' => $this->client_secret,
-            'redirect_uri' => 'https://hub.integrat.pro/api/trendAgent/site/integration-amoCRM/server.php',
+            'redirect_uri' => '',
         ]);
 
         $this->amoCRM = \Ufee\Amo\Oauthapi::getInstance( $this->client_id );
