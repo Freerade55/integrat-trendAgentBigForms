@@ -46,7 +46,6 @@ class IntegrationDemoForm
         $this->amoCRM = \Ufee\Amo\Oauthapi::getInstance( $this->client_id );
         //$this->amoCRM->fetchAccessToken( $this->access_code );
 
-        //$this->amoCRM->queries->logs('/var/www/u0574215/data/www/hub.integrat.pro/api/trendAgent/site/integration-amoCRM/logs/queries');
 
         $this->post = $postData;
 
