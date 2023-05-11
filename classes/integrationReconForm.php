@@ -50,13 +50,12 @@ class IntegrationReconForm
             'domain' => 'trendagent',
             'client_id' => $this->client_id, // id приложения
             'client_secret' => $this->client_secret,
-            'redirect_uri' => 'https://hub.integrat.pro/api/trendAgent/site/integration-amoCRM/server.php',
+            'redirect_uri' => '',
         ]);
 
         $this->amoCRM = \Ufee\Amo\Oauthapi::getInstance( $this->client_id );
         //$this->amoCRM->fetchAccessToken( $this->access_code );
 
-        $this->amoCRM->queries->logs('/var/www/u0574215/data/www/hub.integrat.pro/api/trendAgent/site/integration-amoCRM/logs/log_recon_queries/queries');
 
         $this->post = $postData;
 
